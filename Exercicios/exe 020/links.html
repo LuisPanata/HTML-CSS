@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(90, 6, 6);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: rgb(226, 96, 96);
+        }
+
+        .especial::before {
+            content: '⮚'; 
+            color: darkgray;
+        }
+        .especial::after {
+            content: '⮘';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/luis_panata/?__d=1%252F" target="_blank" class="especial">Meu perfil do instagram</a></li>
+        <li> <a href="https://www.facebook.com/luishenrique.panatatomaz/" target="_blank">Meu perfil do Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/luis-henrique-panata-tomaz-03a238208/" target="_blank">Meu perfil do linkedin</a></li>
+    </ul>
+</body>
+</html>
